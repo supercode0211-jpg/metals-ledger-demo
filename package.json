@@ -1,0 +1,14 @@
+{
+  "name": "metals-ledger-demo",
+  "private": true,
+  "workspaces": [
+    "api",
+    "web"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev -w api",
+    "dev:web": "npm run dev -w web",
+    "test": "npm test -w api",
+    "typecheck": "npm run typecheck -w api && npm run typecheck -w web"
+  }
+}
